@@ -2,13 +2,13 @@ from flask import Flask
 from flask import *
 import uuid
 from datetime import timedelta
-from modules.database import create_record, fetch_id, get_ip, check_and_create, get_time, get_time_now
+from api.modules.database import create_record, fetch_id, get_ip, check_and_create, get_time, get_time_now
 
 app = Flask(__name__)
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.secret_key = "asnfodnongrwojnsdjofnjosdsdnfjonjdnfonjosnfondcii236164136984632748"
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(seconds=5)  # Session timeout of 1 minutes
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session timeout of 5 minutes
 app.config["SESSION_TYPE"] = "filesystem"
 
 @app.route('/')
