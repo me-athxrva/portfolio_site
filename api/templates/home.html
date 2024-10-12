@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/home.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/background.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/preloader.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/responsive.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='stylesheets/content.css') }}"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>atharva deore</title>
+  </head>
+  <body id="body">
+    {% if pre == "not_in_session" %}
+    <div class="preloader" id="preloader">
+      <div class="container">
+        <div>
+          <h1 class="type">Building something amazing...</h1>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <nav data-aos="fade-down" class="navbar">
+      <div class="nav_li">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+
+        <button type="submit" class="ham_nav"></button>
+      </div>
+    </nav>
+
+    <div class="pgintro">
+      <div class="background">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <!-- 15 -->
+        </ul>
+      </div>
+    </div>
+
+    <section class="content">
+      <div class="intro_container">
+        <div class="intro_title">
+          <p data-aos="fade-right" data-aos-delay="100" class="intro">
+            WEB DEVELOPER
+          </p>
+          <p data-aos="fade-right" data-aos-delay="200" class="intro">
+            AND PYTHON PROGRAMER.
+          </p>
+        </div>
+        <div class="intro_quote">
+          <span
+            data-aos="fade-right"
+            data-aos-delay="400"
+            class="intro_quote_text"
+            >Creating designs</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="first" class="content2 margin-padding">
+      <div data-aos="fade-right" class="intro">hello world</div>
+    </section>
+
+    <section id="second" class="content3 margin-padding">Hello world 2</section>
+
+    <footer class="footer">
+      <div class="parent">
+        <div class="lets_talk">
+          <body>
+            <div class="typing-container">
+              <span id="feature-text"></span>
+            </div>
+          </body>
+        </div>
+        <p class="md_lv">
+          Made with love by Atharva<i class="fa-solid fa-heart"></i>
+        </p>
+        <div class="contact">
+          <button type="submit">Contact Me</button>
+        </div>
+        <div class="socials">
+          <a href="#" class="button"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="button"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="button"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="button"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <br />
+        <div class="session_info">
+          <p>{{ userID }}</p>
+          <p>{{ time }}</p>
+          <p>{{ ip }}</p>
+        </div>
+      </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script
+      src="https://kit.fontawesome.com/a0d364e26c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
