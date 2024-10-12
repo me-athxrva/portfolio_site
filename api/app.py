@@ -30,10 +30,6 @@ def home():
     except:
         return redirect('/error')
 
-# @app.route('/')
-# def home():
-#     return render_template('home.html', userID='asbdiasbdiuasuibdbas', ip='102.23.23.43', time='tinme')
-
 @app.route('/error')
 def error():
     return jsonify('error')
