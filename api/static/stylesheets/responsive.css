@@ -1,0 +1,105 @@
+/* Media Queries for Mobile Devices */
+@media (width<= 480px) {
+  .navbar {
+    display: none;
+  }
+
+  .circles li:nth-child(3) {
+    display: none;
+  }
+  .circles li:nth-child(7) {
+    display: none;
+  }
+  .circles li:nth-child(10) {
+    display: none;
+  }
+
+  /* preloader responsiveness */
+  .preloader {
+    background-color: #000;
+    position: fixed;
+    z-index: 101;
+    width: 100vw;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  h1 {
+    overflow: visible;
+    background-color: yellow;
+    font-size: 1.4rem;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .navbar .nav_li {
+    width: auto;
+    padding: 5px;
+    display: flex;
+    position: sticky;
+    right: 5%;
+  }
+  .navbar .nav_li a {
+    display: none;
+  }
+  .navbar .nav_li .ham_nav {
+    display: flex !important;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+  }
+
+  /* footer responsive */
+  .footer {
+    height: auto;
+    position: relative;
+  }
+
+  .footer .parent .lets_talk {
+    display: none;
+  }
+  .info {
+    position: absolute;
+    height: 100%;
+  }
+  .md_lv {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .md_lv i {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  .info .mail {
+    display: none;
+  }
+  .info .phone {
+    display: none;
+  }
+  .a {
+    display: none;
+  }
+  .session_info p {
+    font-size: 0.8rem;
+  }
+  .contact {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+}

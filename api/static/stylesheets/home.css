@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+}
+
+#html {
+  overflow: visible;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.navbar {
+  z-index: 100;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  overflow: visible;
+}
+.navbar .nav_li {
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.199);
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(252, 252, 252, 0.15);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(252, 252, 252, 0.15);
+  box-shadow: 0px 0px 15px 0px rgba(252, 252, 252, 0.15);
+  transition: 0.5s;
+}
+
+.ham_nav {
+  display: none !important;
+}
+
+.navbar .nav_li:hover {
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(252, 252, 252, 0.25);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(252, 252, 252, 0.25);
+  box-shadow: 0px 0px 25px 0px rgba(252, 252, 252, 0.25);
+  scale: 1.025;
+  backdrop-filter: blur(25px);
+}
+
+.navbar .nav_li a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  top: 0;
+  position: sticky;
+  color: #fff;
+}
+
+.content {
+  color: black;
+  height: 100vh;
+}
+
+.margin-padding {
+  padding-top: 6%;
+}
+
+.content2 {
+  color: white;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7540266106442577) 43%,
+    rgba(0, 0, 0, 0.6279761904761905) 61%,
+    rgba(0, 0, 0, 0.48792016806722693) 74%,
+    transparent 100%
+  );
+}
+
+.content3 {
+  color: white;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+}
+
+.display-none {
+  display: none;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.footer .parent {
+  height: 100%;
+  padding: 20px;
+  padding-top: 20px;
+  background-color: #1b1a1a;
+  display: grid;
+  place-content: center;
+}
+.footer .parent .socials {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .parent .socials .button {
+  background-color: transparent;
+  border: 0;
+  z-index: 4;
+  padding: 5px;
+  padding-top: 35px;
+  text-decoration: none;
+}
+.footer .parent .socials .button i {
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  padding: 3px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.footer .parent .lets_talk {
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.footer .parent .info {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+.footer .parent .info .mail {
+  padding: 8px;
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.a {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.a:hover {
+  font-weight: 700;
+}
+.md_lv {
+  display: none;
+}
+.footer .parent .info .phone {
+  padding: 8px;
+  display: grid;
+  width: 50%;
+  place-items: center;
+  position: absolute;
+  right: 0;
+}
+.contact {
+  display: grid;
+  place-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact button {
+  border-radius: 50px;
+  background-color: transparent;
+  border: solid #fff 1px;
+  padding: 20px;
+  padding-right: 35px;
+  padding-left: 35px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.contact button:hover {
+  color: black;
+  background-color: white;
+}
+.session_info {
+  width: 100%;
+  color: #717070;
+  display: grid;
+  place-items: center;
+}

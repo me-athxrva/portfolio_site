@@ -1,0 +1,64 @@
+.preloader {
+  background-color: #000;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes preloader {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 0vh;
+  }
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #16181b;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-wrap: wrap;
+}
+
+h1 {
+  background: -webkit-linear-gradient(25deg, #eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: type 6s steps(270) 1 normal both;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  position: relative;
+}
+
+@keyframes type {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
