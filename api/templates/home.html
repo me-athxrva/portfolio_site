@@ -8,23 +8,24 @@
     <meta http-equiv='pragma' content='no-cache'>
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='stylesheets/home.css') }}"
+      href="{{ 'static/stylesheets/home.css?' + userID }}"
+    />
+    <!-- href="{{ url_for('static', filename='stylesheets/home.css') }}" -->
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/background.css?' + userID }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='stylesheets/background.css') }}"
+      href="{{ 'static/stylesheets/preloader.css?' + userID }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='stylesheets/preloader.css') }}"
+      href="{{ 'static/stylesheets/responsive.css?' + userID }}"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='stylesheets/responsive.css') }}"
-    />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='stylesheets/content.css') }}"
+      href="{{ 'static/stylesheets/content.css?' + userID }}"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" type="image/gif" href="{{ url_for('static', filename='assets/icon.gif') }}"/>
