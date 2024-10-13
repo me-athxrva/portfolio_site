@@ -33,7 +33,3 @@ if (loader==null) {
   html.style.overflow = 'hidden';
   preloader_func();
 }
-
-
-var cursor = document.querySelector('.cursor');
-var a = document.querySelectorAll('a');
