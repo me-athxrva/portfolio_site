@@ -38,9 +38,12 @@ function remove_img(){
     console.log("event recorded");
     img.src = "";
     setTimeout(() => {
-        cursor.animate({
-            height: '20px',
-            width: '20px'},
-            {duration: 200, fill: "forwards"});
-    }, 200);
+        img.animate({
+            opacity: 0},
+            {duration: 300, fill: "forwards"});
+    }, 100);
+    cursor.animate({
+        height: '20px',
+        width: '20px'},
+        {duration: 200, fill: "forwards"});
 };
