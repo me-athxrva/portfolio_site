@@ -1,7 +1,7 @@
 .cursor {
   background-color: red;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   border-radius: 50px;
   position: fixed;
   z-index: 200;
@@ -14,6 +14,7 @@
   /* position: relative; */
 }
 .cursor img{
+    opacity: 0;
     width: 100%;
     height: auto;
 }
