@@ -37,9 +37,12 @@ html.sr .intro_title {
 }
 .intro_quote .intro_quote_text {
   padding: 8px;
+  position: relative;
+}
+.intro_quote_text a{
+  text-decoration: none;
   font-size: 2.5rem;
   font-weight: 400;
-  position: relative;
   color: white;
 }
 .intro_quote .intro_quote_text::after {

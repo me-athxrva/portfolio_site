@@ -23,7 +23,6 @@ function setatr(){
   let script = document.createElement("script");
   script.innerHTML = "AOS.init();";
   body.appendChild(script)
-
 }
 
 if (loader==null) { 
