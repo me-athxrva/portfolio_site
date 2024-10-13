@@ -2,7 +2,7 @@ from flask import Flask
 from flask import *
 import uuid
 from datetime import timedelta
-from modules.database import create_record, fetch_id, get_ip, check_and_create, get_time, get_time_now
+from api.modules.database import create_record, fetch_id, get_ip, check_and_create, get_time, get_time_now
 
 app = Flask(__name__)
 
