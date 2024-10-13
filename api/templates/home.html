@@ -160,8 +160,8 @@
         </div>
       </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/cursor.js') }}"></script>
+    <script src="{{ 'static/js/script.js?' + userID }}"></script>
+    <script src="{{ 'static/js/cursor.js?' + userID }}"></script>
     <script
       src="https://kit.fontawesome.com/a0d364e26c.js"
       crossorigin="anonymous"
