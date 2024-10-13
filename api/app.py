@@ -13,22 +13,19 @@ app.config["SESSION_TYPE"] = "filesystem"
 
 @app.route('/')
 def home():
-    try:
-        if not session.get('userid'):
-            userID = uuid.uuid4()
-            global str_uuid
-            str_uuid = str(userID)
-            session['userid'] = userID
-            check_and_create()
-            create_record(str_uuid)
-            ip = get_ip()
-            return render_template('home.html', pre='not_in_session', ip=ip, userID=fetch_id(ip), time=get_time_now())
-        else:
-            ip = get_ip()
-            print(f"in session: {fetch_id(ip)}")
-            return render_template('home.html', userID=fetch_id(ip), ip=ip, time=get_time(ip))
-    except:
-        return redirect('/error')
+    if not session.get('userid'):
+        userID = uuid.uuid4()
+        global str_uuid
+        str_uuid = str(userID)
+        session['userid'] = userID
+        check_and_create()
+        create_record(str_uuid)
+        ip = get_ip()
+        return render_template('home.html', pre='not_in_session', ip=ip, userID=fetch_id(ip), time=get_time_now())
+    else:
+        ip = get_ip()
+        print(f"in session: {fetch_id(ip)}")
+        return render_template('home.html', userID=fetch_id(ip), ip=ip, time=get_time(ip))
 
 @app.route('/error')
 def error():
