@@ -39,7 +39,7 @@ html.sr .intro_title {
   padding: 8px;
   position: relative;
 }
-.intro_quote_text a{
+.intro_quote_text .intro_text_link{
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: 400;
