@@ -102,4 +102,33 @@
     padding-bottom: 0px;
     position: relative;
   }
+
+  /* landing page content responsive */ 
+  .intro_container{
+    background-color: red;
+    height: 100%;
+  }
+  #intro_id {
+    font-size: 4.5rem;
+    /* color: red; */
+  }
+  .intro_quote{
+    background-color: palegoldenrod;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px 0 0 0;
+  }
+  .intro_quote_text{
+    background-color: gainsboro;
+    /* bottom: -10%; */
+    left: 0;
+  }
+  #intro_text_link{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    color: red;
+    background-color: yellow;
+  }
 }

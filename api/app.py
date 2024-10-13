@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 app.secret_key = "asnfodnongrwojnsdjofnjosdsdnfjonjdnfonjosnfondcii236164136984632748"
-app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=5)  # Session timeout of 5 minutes
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(minutes=25)  # Session timeout of 5 minutes
 app.config["SESSION_TYPE"] = "filesystem"
 
 @app.route('/')
@@ -33,6 +33,10 @@ def home():
 @app.route('/error')
 def error():
     return jsonify('error')
+
+@app.route('/linkedin')
+def linkedin():
+    return redirect('https://linkedin.com/in/atharvadeore')
 
 @app.route('/state')
 def nextpage():
