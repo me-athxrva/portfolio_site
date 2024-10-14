@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="{{ 'static/stylesheets/background.css?' + userID }}"
+      href="{{ 'static/stylesheets/background.css' + session }}"
     />
     <link
       rel="stylesheet"
-      href="{{ 'static/stylesheets/content.css?' + userID }}"
+      href="{{ 'static/stylesheets/content.css' + session }}"
     />
     <link
       rel="stylesheet"
-      href="{{ 'static/stylesheets/cursor.css?' + userID }}"
+      href="{{ 'static/stylesheets/cursor.css' + session }}"
     />
     <link
       rel="stylesheet"
-      href="{{ 'static/stylesheets/home.css?' + userID }}"
+      href="{{ 'static/stylesheets/home.css' + session }}"
     />
     <link
       rel="stylesheet"
-      href="{{ 'static/stylesheets/preloader.css?' + userID }}"
+      href="{{ 'static/stylesheets/preloader.css' + session }}"
     />
     <link
       rel="stylesheet"
-      href="{{ 'static/stylesheets/responsive.css?' + userID }}"
+      href="{{ 'static/stylesheets/responsive.css' + session }}"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
@@ -124,7 +124,7 @@
     </section>
 
     <section id="first" class="content2 margin-padding">
-      <div data-aos="fade-right" class="intro">hello world</div>
+      <div data-aos="fade-right" class="intro">{{ 'static/stylesheets/cursor.css' + session }}</div>
     </section>
 
     <section id="second" class="content3 margin-padding">Hello world 2</section>
@@ -160,8 +160,8 @@
         </div>
       </div>
     </footer>
-    <script src="{{ 'static/js/script.js?' + userID }}"></script>
-    <script src="{{ 'static/js/cursor.js?' + userID }}"></script>
+    <script src="{{ 'static/js/script.js' + session }}"></script>
+    <script src="{{ 'static/js/cursor.js' + session }}"></script>
     <script
       src="https://kit.fontawesome.com/a0d364e26c.js"
       crossorigin="anonymous"
