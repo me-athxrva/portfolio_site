@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/gif" href="{{ url_for('static', filename='assets/icon.gif') }}"/>
-    <title>State</title>
-</head>
-<body>
-<style>
-    h1 {
-        -webkit-user-select: none; /* Safari */
-        -ms-user-select: none; /* IE 10 and IE 11 */
-        user-select: none; /* Standard syntax */
-     }
-</style>
-    <h1>{{ userID }}</h1>
-    <br>
-    <h1>{{ ip }}</h1>
-    <br>
-    <h1>{{ data }}</h1>
-    <hr>
-    <hr>
-    <h1>
-        {{ 'static/stylesheets/cursor.css' + session }}
-    </h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <h1></h1>
+{% endblock %}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/background.css' + session }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/content.css' + session }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/cursor.css' + session }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/home.css' + session }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/preloader.css' + session }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ 'static/stylesheets/responsive.css' + session }}"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/gif"
+      href="{{ url_for('static', filename='assets/icon.gif') }}"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>atharva deore</title>
+  </head>
+  <body id="body">
+    {% if pre == "not_in_session" %}
+    <div class="preloader" id="preloader">
+      <div class="container">
+        <div>
+          <h1 class="type">Building something amazing...</h1>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- cutom cursor -->
+    <div class="cursor">
+      <img/>
+    </div>
+
+    <!-- navbar -->
+    <nav data-aos="fade-down" data-aos-delay="100" class="navbar">
+      <div class="nav_li">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+
+        <button type="submit" class="ham_nav"></button>
+      </div>
+    </nav>
+
+    <div class="pgintro">
+      <div class="background">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <footer class="footer">
+      <div class="parent">
+        <div class="lets_talk">
+          <body>
+            <div class="typing-container">
+              <span id="feature-text"></span>
+            </div>
+          </body>
+        </div>
+        <p class="md_lv">
+          Made with love by Atharva<i class="fa-solid fa-heart"></i>
+        </p>
+        <div class="contact">
+          <button type="submit">Contact Me</button>
+        </div>
+        <div class="socials">
+          <a href="#" class="button"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="button"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="button"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="button"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <br />
+        <div class="session_info">
+          <p>{{ userID }}</p>
+          <p>{{ time }}</p>
+          <p>{{ ip }}</p>
+        </div>
+      </div>
+    </footer>
+    <script src="{{ 'static/js/script.js' + session }}"></script>
+    <script src="{{ 'static/js/cursor.js' + session }}"></script>
+    <script
+      src="https://kit.fontawesome.com/a0d364e26c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
