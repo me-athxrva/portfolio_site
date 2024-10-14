@@ -50,6 +50,7 @@
     <!-- cutom cursor -->
     <div class="cursor">
       <img/>
+      <p>Click Me</p>
     </div>
 
     <!-- navbar -->
@@ -59,7 +60,6 @@
         <a href="#">About Me</a>
         <a href="#">Projects</a>
         <a href="#">Contact</a>
-
         <button type="submit" class="ham_nav"></button>
       </div>
     </nav>
@@ -103,14 +103,12 @@
           Made with love by Atharva<i class="fa-solid fa-heart"></i>
         </p>
         <div class="contact">
-          <button type="submit">Contact Me</button>
+          <button id="contact_btn" type="submit" onclick="window.location.href='/error'">Contact Me</button>
         </div>
         <div class="socials">
           <a href="#" class="button"><i class="fa-brands fa-instagram"></i></a>
           <a href="#" class="button"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" class="button"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
+          <a href="#" class="button"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href="#" class="button"><i class="fa-brands fa-github"></i></a>
         </div>
         <br />
@@ -123,9 +121,6 @@
     </footer>
     <script src="{{ 'static/js/script.js' + session }}"></script>
     <script src="{{ 'static/js/cursor.js' + session }}"></script>
-    <script
-      src="https://kit.fontawesome.com/a0d364e26c.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a0d364e26c.js" crossorigin="anonymous"></script>
   </body>
 </html>

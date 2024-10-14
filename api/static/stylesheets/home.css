@@ -43,6 +43,8 @@ html {
 }
 .navbar .nav_li {
   padding: 5px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   background-color: rgba(255, 255, 255, 0.199);
   top: 0;
   position: sticky;
@@ -71,13 +73,17 @@ html {
 
 .navbar .nav_li a {
   text-decoration: none;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   font-size: 1.4rem;
   font-weight: 700;
   color: #000;
   top: 0;
   position: sticky;
   color: #fff;
+  border-radius: 50px;
+}
+.navbar .nav_li a:hover{
+  transform: scale(1.2);
 }
 
 .content {

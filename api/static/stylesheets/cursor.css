@@ -11,10 +11,14 @@
   transform: translate(-50%,-50%);
   pointer-events: none;
   overflow: hidden;
-  /* position: relative; */
 }
 .cursor img{
     opacity: 0;
     width: 100%;
     height: auto;
+}
+.cursor p{
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0;
 }
