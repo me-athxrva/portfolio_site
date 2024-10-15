@@ -23,7 +23,7 @@
   font-weight: 900;
   font-family: "Anton", sans-serif;
   font-style: normal;
-  color: white;
+  color: #000;
 }
 .intro_container .intro_quote {
   height: 20%;
@@ -38,18 +38,17 @@
 .intro_quote_text .intro_text_link{
   text-decoration: none;
   font-size: 2.3rem;
-  font-weight: 400;
-  color: white;
+  font-weight: 700;
+  color: #000;
+  border-radius: 50px;
+  padding: 8px;
 }
 .intro_text_link:hover{
-  font-weight: 500;
+  font-size: 2.4rem;
+  color: greenyellow;
+  background-color: black;
+  padding: 12px;
 }
-.intro_quote .intro_quote_text::after {
-  content: "";
-  position: absolute;
-  background-color: white;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
+.margin-padding {
+  padding-top: 6%;
 }
